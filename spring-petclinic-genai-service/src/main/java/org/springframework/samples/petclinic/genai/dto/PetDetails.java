@@ -17,16 +17,33 @@ package org.springframework.samples.petclinic.genai.dto;
 
 import java.util.List;
 
-/**
- * Simple Data Transfer Object representing a pet data type.
- *
- * @author Oded Shopen
- */
-public record PetDetails(
-    int id,
-    String name,
-    String birthDate,
-    PetType type,
-    List<VisitDetails> visits
-){
+public class PetDetails {
+
+    private int id;
+    private String name;
+    private String birthDate;
+    private PetType type;
+    private List<VisitDetails> visits;
+
+    public PetDetails() {
+    }
+
+    public PetDetails(int id, String name, String birthDate, PetType type, List<VisitDetails> visits) {
+        this.id = id;
+        this.name = name;
+        this.birthDate = birthDate;
+        this.type = type;
+        this.visits = visits;
+    }
+
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    public String getBirthDate() { return birthDate; }
+    public void setBirthDate(String birthDate) { this.birthDate = birthDate; }
+    public PetType getType() { return type; }
+    public void setType(PetType type) { this.type = type; }
+    public List<VisitDetails> getVisits() { return visits; }
+    public void setVisits(List<VisitDetails> visits) { this.visits = visits; }
 }

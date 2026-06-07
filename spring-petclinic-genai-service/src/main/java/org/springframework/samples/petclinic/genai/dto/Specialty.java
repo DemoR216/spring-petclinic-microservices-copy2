@@ -15,14 +15,21 @@
  */
 package org.springframework.samples.petclinic.genai.dto;
 
-/**
- * Simple Data Transfer Object representing a vet's specialty.
- *
- * @author Oded Shopen
- */
+public class Specialty {
 
-public record Specialty(
-    Integer id,
-    String name
-) {
+    private Integer id;
+    private String name;
+
+    public Specialty() {
+    }
+
+    public Specialty(Integer id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Integer getId() { return id; }
+    public void setId(Integer id) { this.id = id; }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 }
