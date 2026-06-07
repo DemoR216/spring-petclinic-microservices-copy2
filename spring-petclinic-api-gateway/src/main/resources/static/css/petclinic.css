@@ -9610,4 +9610,74 @@ strong {
     margin-top: 10px;
     margin-bottom: 30px; } }
 
+/* ==========================================================================
+   Cardinal Health Brand Overrides
+   ========================================================================== */
+
+:root {
+  --bs-primary: #F34D3E;
+  --bs-primary-rgb: 243, 77, 62;
+}
+
+.navbar {
+  border-top: 4px solid #F34D3E;
+  background-color: #F34D3E !important;
+}
+
+.navbar-brand span,
+.navbar .nav-link,
+.navbar .navbar-text {
+  color: #FFFFFF !important;
+}
+
+.navbar li:hover > a {
+  color: #FFFFFF;
+  background-color: #d43d2f;
+}
+
+.btn-primary,
+.btn-default {
+  background-color: #F34D3E;
+  border-color: #F34D3E;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+  background-color: #d43d2f;
+  border-color: #d43d2f;
+  color: #FFFFFF;
+}
+
+a {
+  color: #F34D3E;
+}
+
+a:hover {
+  color: #d43d2f;
+}
+
+.xd-container h2 {
+  color: #F34D3E;
+}
+
+footer,
+.footer {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+}
+
+footer a,
+.footer a,
+footer p,
+.footer p,
+footer span,
+.footer span {
+  color: #FFFFFF !important;
+}
+
 /*# sourceMappingURL=../../../../../target/petclinic.css.map */
